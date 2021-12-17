@@ -3,10 +3,8 @@
 .range {
     height: 80px;
     width: 380px;
-    background: #fff;
     border-radius: 10px;
     padding: 0 65px 0 45px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .sliderValue {
     position: relative;
@@ -22,7 +20,7 @@
     display: inline-block;
     padding: 15px;
     z-index: 2;
-    color: red;
+    color: #ffb800;
     transform-origin: bottom;
     transition: transform 0.3s ease-in-out;
     pointer-events: none;
@@ -37,14 +35,14 @@
 .field .value {
     position: absolute;
     font-size: 18px;
-    color: #664aff;
     font-weight: 600;
+    cursor: pointer;
 }
 .field .value.left {
-    left: -22px;
+    left: -40px;
 }
 .field .value.right {
-    right: -43px;
+    right: -40px;
 }
 .range input {
     -webkit-appearance: none;
@@ -60,11 +58,12 @@
     -webkit-appearance: none;
     width: 30px;
     height: 30px;
-    background: red;
     border-radius: 50%;
-    background: #664aff;
-    border: 1px solid #664aff;
+    background: linear-gradient(180deg, #141414 48.23%, #5a5a5a 100%);
+    border: 1.36291px solid #474852;
     cursor: pointer;
+    position: relative;
+    top: -170%;
 }
 .range input::-moz-range-thumb {
     -webkit-appearance: none;
@@ -75,7 +74,14 @@
     background: #664aff;
     border: 1px solid #664aff;
     cursor: pointer;
+    position: relative;
+    top: -160%;
 }
 .range input::-moz-range-progress {
-    background: #664aff;
+    background: linear-gradient(180deg, #f2b411 0%, #ffb800 100%);
+}
+.range input::-webkit-slider-runnable-track {
+    height: 7px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #f2b411 0%, #ffb800 100%);
 }
