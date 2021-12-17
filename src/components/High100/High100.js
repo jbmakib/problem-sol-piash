@@ -7,7 +7,7 @@ const High100 = () => {
     return (
         <div>
             <h2>Highest value is 100</h2>
-            <Slider value={value} setValue={setValue} />
+            <Slider value={value} setValue={setValue} highest={100} />
         </div>
     );
 };

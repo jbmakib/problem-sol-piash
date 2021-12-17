@@ -5,7 +5,7 @@ import High6 from "./components/High6/High6";
 
 function App() {
     return (
-        <div className="App">
+        <div>
             <High6 />
             <High100 />
             <High200 />
