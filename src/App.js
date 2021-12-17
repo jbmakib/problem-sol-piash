@@ -1,23 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
+import High100 from "./components/High100/High100";
+import High200 from "./components/High200/High200";
+import High6 from "./components/High6/High6";
 
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <High6 />
+            <High100 />
+            <High200 />
         </div>
     );
 }
